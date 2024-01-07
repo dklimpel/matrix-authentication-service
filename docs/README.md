@@ -9,4 +9,4 @@ A hosted version is available at <https://matrix-org.github.io/matrix-authentica
 
  - Technical documentation for individual crates: [`rustdoc`](./rustdoc/mas_handlers/)
  - UI components: [`storybook`](./storybook/)
- - GraphQL: [`storybook`](./spectaql/)
+ - GraphQL: [`SpectaQL`](./spectaql/)
