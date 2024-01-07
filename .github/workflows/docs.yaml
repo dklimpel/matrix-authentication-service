@@ -2,9 +2,9 @@ name: Build and deploy the documentation
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, test_spectaql ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, test_spectaql ]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -42,6 +42,9 @@ jobs:
 
       - name: Build the documentation
         run: sh misc/build-docs.sh
+
+      - name: Build the spectaql
+        run: sh misc/build-spectaql.sh
 
       - name: Fix permissions
         run: |
